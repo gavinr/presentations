@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web AppBuilder for ArcGIS: An Overview</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black-custom.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Web AppBuilder for ArcGIS</h1>
+					<h3>JavaScript Apps Made Easy</h3>
+					<p>
+						<small><a href="http://twitter.com/gavinrehkemper">@gavinrehkemper</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Show of Hands ....</h2>
+					<aside class="notes">
+					<ul>
+						<li>How many people have used web app builder?</li>
+						<li>How many people have developed a custom widget or theme?</li>
+						<li>How many people are interested in developing a custom widget or theme?</li>
+					</aside>
+				</section>
+
+				<section>
+					<h2>What is It?</h2>
+					<p>
+						<ul>
+							<li>Enables web apps to be created without programming</li>
+							<li>Fully integrated with the ArcGIS platform</li>
+							<li>Built with ArcGIS API for JavaScript and HTML 5 technology
+							<li>Responsive</li>
+							<li>Extensible</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<img src="images/wab.png" class="stripped" />
+				</section>
+
+				<section>
+					<h2>Use it in two ways</h2>
+					<p>
+						<ol>
+							<li>Within ArcGIS Online or Portal for ArcGIS</li>
+							<li>Developer Edition</li>
+						</ol>
+					</p>
+					<aside class="notes">
+						<strong>Within ArcGIS Online or Portal for ArcGIS</strong><Br />
+						Embedded in the web site<Br />
+						Activate from the map viewer or My Contents<Br />
+						<br />
+						<strong>Developer Edition</strong><Br />
+						Separate download and installed locally<Br />
+						Sign into ArcGIS Online or Portal for ArcGIS<Br />
+						Support for custom widgets, panels, and themes<Br />
+						<Br />
+						Both offer the same “builder” user experience, same capabilities
+
+					</aside>
+				</section>
+
+				<section>
+					<a href="videos/wab-demo-1.mp4" target="_blank"><img src="images/workflow.png" class="stripped" /></a>
+					<aside class="notes">
+						This is the basic workflow ... let's show!<br />
+						<a href="http://ps-dbs.maps.arcgis.com/home/item.html?id=022b7e4531f24c528b50ea887de7618d">Demo web map</a>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Part II: Developers</h2>
+					<img src="images/typing.gif" class="stripped" />
+					<aside class="notes">
+						Now, a deeper dive into the "Developer Edition" (discussed earlier). Don't let the word "Developer" scare you though! We'll keep it simple.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Best Practices for Custom Widgets and Themes</h2>
+					<ul>
+						<li>Use Grunt to separate custom code from WAB in source control</li>
+						<li>Use Yeoman to scaffold out boilerplate files</li>
+						<li>Test your code!</li>
+					</ul>
+					<p>
+						All of these topics are covered in:
+						<a href="https://github.com/tomwayson/web-appbuilder-tools-techniques-dev-summit-2015">Tools and Techniques for Web AppBuilder Development</a> (Dev Summit 2015)
+					</p>
+				</section>
+				<section>
+					<a href="videos/wab-demo-2.mp4" target="_blank"><img src="images/developers-download-page.png" class="stripped" /></a>
+					<small><a href="https://developers.arcgis.com/web-appbuilder/" target="_blank">https://developers.arcgis.com/web-appbuilder/</a></small>
+					<aside class="notes">
+						Start off here, download, and now lets show a quick demo
+					</aside>
+				</section>
+
+				 <section>
+					<h3>Sharing Widgets</h3>
+					<ul>
+						<li>Sharing:
+							<ul>
+							<li><a href="https://geonet.esri.com/groups/web-app-builder-custom-widgets">GeoNet Web AppBuilder Custom Widgets Community</a></li>
+							<li><a href="https://github.com/Esri/arcgis-webappbuilder-widgets-themes">github.com/Esri/arcgis-webappbuilder-widgets-themes</a>
+							<ul><li>Pull requests welcome!</li></ul></li>
+							</ul>
+						</li>
+						<li>Discover great widgets:
+							<ul>
+							<li><a href="https://github.com/Esri/solutions-webappbuilder-widgets">https://github.com/Esri/solutions-webappbuilder-widgets</a></li>
+							<li><a href="http://gavinr.github.io/wab-widget-search/">Meta: Search</a> (please submit your github links!)</li>
+							<li>More to come - stay tuned.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Resources</h3>
+					<p>Here are some resources to get you started:</p>
+					<ul>
+
+						<li>Videos:
+						<ul><li>Intro: <a href="http://video.esri.com/watch/3993/web-appbuilder-for-arcgis">Overview (11/2014)</a> - <a href="http://video.esri.com/watch/3848/arcgis-webapp-builder-an-introduction">UC 2014</a> - <a href="http://video.esri.com/watch/3306/intro-web-appbuilder-for-arcgis_dash_javascript-apps-made-easy">DevSummit 2014</a></li><li>Customizing: <a href="http://video.esri.com/watch/3845/arcgis-webapp-builder-customizing-and-extending">UC 2014</a> - <a href="http://video.esri.com/watch/3362/customizing-and-extending-web-appbuilder-for-arcgis">DevSummit 2014</a></li></ul></li>
+						<li>Documentaion:
+						<ul>
+						<li>Online: <a href="https://developers.arcgis.com/web-appbuilder/">Developer Edition</a> (Download Here!)</li>
+						<li>Bundled: http://localhost:3344/webappbuilder/help/</li></ul></li>
+						<li>GeoNet:
+						<ul>
+						<li><a href="https://geonet.esri.com/community/gis/web-gis/web-appbuilder">Web AppBuilder for ArcGIS Community</a></li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+				<h2>Thank You!</h2>
+				<p>
+					Find this presentation, with all links, on my GitHub page:<br />
+					<a href="https://github.com/gavinr/presentations">github.com/gavinr/presentations</a>
+				</p>
+				</section>
+
+				<!-- <section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section> -->
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
