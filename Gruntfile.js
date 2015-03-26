@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'src/',
 					src: [
-						'**'
+						'**/*', '!**/node_modules/**'
 					],
 					dest: 'dist/',
 					flatten: false
