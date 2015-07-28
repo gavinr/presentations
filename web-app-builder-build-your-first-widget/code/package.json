@@ -1,0 +1,14 @@
+{
+  "name": "web-app-builder-build-your-first-widget-code",
+  "version": "0.0.1",
+  "description": "Demo code for the talk",
+  "author": {
+    "name": "Gavin Rehkemper"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sync": "^0.2.3"
+  },
+  "dependencies": {}
+}
