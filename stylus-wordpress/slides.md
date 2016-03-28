@@ -15,14 +15,14 @@ Note:
 ![CSS](images/developers.gif)
 
 Note:
-- We're all developers here. Which means we're all lazy. And that's a great thing! Because it makes us more ... 
+- We're all developers here. Which means we're all lazy. Summer is coming up - I want to hit the pool! And being lazy is a great thing! Because it makes us more ...
 
 ---
 
 ![CSS](images/efficient.gif)
 
 Note:
-- Efficient. 
+- Efficient.
 
 ---
 
@@ -32,7 +32,7 @@ Note: None of us like writing more code than necessary. Which is important when 
 
 ---
 
-![CSS](https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif)
+![CSS](images/css.gif)
 
 Note: So the goal for today is to take write CSS, which if you're writing modular code, the syntax can often get quite verbose, repetitive, and unweily, in a much more efficient manner.
 
@@ -40,7 +40,7 @@ Note: So the goal for today is to take write CSS, which if you're writing modula
 
 # Solution
 
-Note: what will help us do that is to use a CSS Preprocessor. These make CSS better by introducing an alternative simpler, more readable syntax, as well as additional features like variables, functions, mixins, conditionals, and more.
+Note:  CSS Preprocessors are our solution. These make CSS better by introducing an alternative simpler, more readable syntax, as well as additional features like variables, functions, mixins, conditionals, and more.
 
 ---
 
@@ -91,10 +91,11 @@ Note: you can use any
   color red
 
 ```
+
 ---
 
 ```
-.page 
+.page
 	.wrapper
 		h1.title
   			color red
@@ -113,7 +114,7 @@ Note: you can use any
 }
 .page .section {
 	width: 20px;
-	height: 30px;	
+	height: 30px;
 	background-color: #800000;
 }
 .page .section h1 {
@@ -126,13 +127,13 @@ Note: you can use any
 </section>
 </td><td>
     <pre><code data-trim data-noescape>
-red = #800000
+myRed = #800000
 .page
-	background-color red
+	background-color myRed
 	.section
 		width 20px
 		height 30px
-		background-color red
+		background-color myRed
 		h1
 			font-size 4rem
 		p
@@ -172,6 +173,8 @@ wp_enqueue_style( 'style-main', get_template_directory_uri() . '/css/main.css' )
 ---
 
 ![pool](images/pool.gif)
+
+Note: So using Stylus, or even LESS or SASS in YOUR project will make the styling of your WordPress sites much more easy, so that gives you a lot more time to hit the pool this summer. Thank You!
 
 ---
 
