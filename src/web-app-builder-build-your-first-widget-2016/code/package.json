@@ -1,0 +1,22 @@
+{
+  "name": "parkwhiz-widget",
+  "version": "1.0.0",
+  "description": "A widget that allows you to use the ParkWhiz API from Web AppBuilder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gavin Rehkemper, Esri",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-simple-amd": "^0.3.0",
+    "babel-preset-es2015-without-strict": "0.0.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sync": "^0.5.2"
+  }
+}
