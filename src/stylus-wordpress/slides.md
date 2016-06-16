@@ -144,6 +144,16 @@ myRed = #800000
 </table>
 ---
 
+# Compare!
+
+[github.com/stylus/stylus/blob/master/docs/compare.md](https://github.com/stylus/stylus/blob/master/docs/compare.md)
+
+[gist.github.com/chriseppstein/674726](https://gist.github.com/chriseppstein/674726)
+
+Note: Like I said before, you can really use whichever you prefer. .... Now let's chat about using Stylus.
+
+---
+
 `npm install stylus -g`
 
 [stylus-lang.com](http://stylus-lang.com/)
