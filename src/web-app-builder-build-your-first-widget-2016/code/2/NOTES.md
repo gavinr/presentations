@@ -12,7 +12,9 @@
       console.log('CLICKED', evt);
     });
     ```
+  
   * code snippet:
+  
     ```
     if(this.mapClickHandler) {
       this.mapClickHandler.remove();
