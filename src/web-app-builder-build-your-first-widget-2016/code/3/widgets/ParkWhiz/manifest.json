@@ -1,0 +1,25 @@
+{
+  "name": "ParkWhiz",
+  "label": "Park Whiz",
+  "2D": false,
+  "3D": true,
+  "platform": "HTML3D",
+  "version": "0.0.1",
+  "wabVersion": "2.0beta",
+  "author": "Gavin",
+  "description": "A widget to find parking spots",
+  "copyright": "",
+  "license": "ISC",
+  "properties": {
+    "inPanel": true,
+    "hasLocale": true,
+    "hasStyle": true,
+    "hasConfig": true,
+    "hasUIFile": true,
+    "hasSettingPage": true,
+    "hasSettingUIFile": true,
+    "hasSettingLocale": true,
+    "hasSettingStyle": true,
+    "IsController": false
+  }
+}
