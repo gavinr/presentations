@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><snippets><snippet name="pointExtrudeVS"><![CDATA[
+  attribute vec3 $position;
+  attribute vec3 $auxpos1;
+
+  uniform mat4 projMat;
+  uniform mat4 viewMat;
+  uniform sampler2D startVizFieldVertexture;
+  uniform sampler2D endVizFieldVertexture;
+  uniform float animationInterval;
+  uniform vec2 size;
+  uniform float topColor;
+  uniform float bottomColor;
+  uniform float fxTime;
+  uniform float segmentsFactor;
+  uniform vec2 vizFieldVertextureSize;
+  uniform vec2 wholeMinMaxValue;
+  uniform bool reachedRepeatLimit;
+
+  varying vec4 vColor;
+  varying vec3 vTransNormal;
+  varying vec3 vPos;
+
+  $linearInterpolator
+  $translationMat
+  $float2rgba
+  $quintEaseOut
+
+  const float UpFlag = 1.0;
+  const float DownFlag = 0.0;
+
+  void main(void) {
+    float u = fract($auxpos1.x / vizFieldVertextureSize.x);
+    float v = floor($auxpos1.x / vizFieldVertextureSize.y) / vizFieldVertextureSize.y;
+    float startValue = (texture2D(startVizFieldVertexture, vec2(u, v))).r;
+    float endValue = (texture2D(endVizFieldVertexture, vec2(u, v))).r;
+
+    //float t = fract(fxTime/animationInterval);
+    //if (reachedRepeatLimit)
+    //  t = 1.0;
+    //float curValue = (1.0-t)*startValue + t*endValue;
+
+    float t = mod(fxTime, animationInterval);
+    float curValue = getQuintEaseInOutValue(t, startValue, endValue, animationInterval);
+    if (reachedRepeatLimit)
+      curValue = endValue;
+
+    vec3 vertex;
+    float angle = $auxpos1.y * segmentsFactor * 2.0 * PI; // CCW
+    vertex = vec3(size[0]*cos(angle), size[0]*sin(angle), 0.0);
+
+    bool topVertex = false;
+    if (abs($auxpos1.z-UpFlag) < Epsilon)
+      topVertex = true;
+    else if (abs($auxpos1.z-DownFlag) < Epsilon)
+      topVertex = false;
+	
+    mat4 transMat = getTransMat($position);
+    vec3 pos = (transMat * vec4(vertex, 1.0)).xyz;
+    mat4 rotateMat = toRotationMat(transMat);
+    vec4 modNomal;
+    modNomal = vec4(0.0, 0.0, 1.0, 0.0);
+    vec3 normal = (rotateMat * modNomal).xyz;
+    normal = normalize(normal);
+    if (topVertex) {
+      vColor = float2rgba(topColor);
+      pos += (normal * getLinearValue(wholeMinMaxValue, curValue) * size[1]);
+    } else {
+      vColor = float2rgba(bottomColor);
+    }
+    gl_Position = projMat * viewMat * vec4(pos, 1.0);
+    vTransNormal = normalize(rotateOnAxis(normal, angle-(2.0*PI*segmentsFactor*0.5), (rotateMat * vec4(1.0, 0.0, 0.0, 0.0)).xyz));
+    vTransNormal = normalize(vTransNormal + normal);
+    vPos = pos;
+  }
+]]></snippet><snippet name="pointExtrudeFS"><![CDATA[
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+
+  uniform float transparency;
+  uniform vec3 lightDirection;
+  uniform vec4 lightAmbient;
+  uniform vec4 lightDiffuse;
+  uniform vec4 lightSpecular;
+  uniform vec3 camPos;
+
+  varying vec4 vColor;
+  varying vec3 vTransNormal;
+  varying vec3 vPos;
+
+  void main() {
+  
+    vec3 diffuseColor = vec3(1.0, 1.0, 1.0);
+    vec3 ambientColor = vec3(1.0, 1.0, 1.0);
+    vec3 specularColor = vec3(0.1, 0.1, 0.1);
+
+    vec3 viewDir = normalize(vPos - camPos);
+    vec3 normal = normalize(vTransNormal);
+
+    float transparencyTmp = transparency * 0.01;
+
+    vec3 reflDir = normalize(reflect(viewDir, normal));
+    float specDot = max(dot(reflDir, lightDirection), .001);
+    vec3 s = specularColor * lightSpecular.rgb * lightSpecular.w * pow(specDot, 10.0);
+    vec3 d = diffuseColor * lightDiffuse.rgb * lightDiffuse.w * clamp(dot(normal, lightDirection), .0, 1.0);
+    vec3 a = ambientColor * lightAmbient.rgb * lightAmbient.w;
+
+    vec3 lightVec = vec3(a + d + s);
+    gl_FragColor.xyz = vColor.xyz * lightVec;
+    gl_FragColor.w = transparencyTmp;
+  }
+]]></snippet></snippets>

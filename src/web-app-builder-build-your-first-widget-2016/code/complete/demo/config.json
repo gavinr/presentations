@@ -1,0 +1,258 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "default",
+      "black",
+      "blue",
+      "cyan",
+      "green",
+      "purple",
+      "red",
+      "yellow"
+    ],
+    "version": "2.0.1"
+  },
+  "portalUrl": "http://ps-dbs.maps.arcgis.com",
+  "appId": "",
+  "authorizedCrossOriginDomains": [],
+  "title": "ParkWhiz Demo App",
+  "subtitle": "with Web AppBuilder for ArcGIS",
+  "keepAppState": false,
+  "logo": "images/app-logo.png",
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
+  },
+  "geometryService": "http://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+  "links": [
+    {
+      "label": "ArcGIS Online",
+      "url": "//www.arcgis.com"
+    }
+  ],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40,
+          "paddingRight": 0,
+          "relativeTo": "browser"
+        },
+        "version": "2.0.1",
+        "id": "themes_FoldableTheme_widgets_HeaderController_Widget_1",
+        "name": "HeaderController",
+        "label": "Header Controller"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "left": 51,
+          "top": 10,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_Search_Widget_2",
+        "name": "Search",
+        "label": "Search"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "left": 10,
+          "top": 10,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_ZoomSlider_Widget_3",
+        "name": "ZoomSlider",
+        "label": "Zoom Slider"
+      },
+      {
+        "uri": "widgets/Home/Widget",
+        "position": {
+          "left": 10,
+          "top": 85,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_Home_Widget_4",
+        "name": "Home",
+        "label": "Home"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 10,
+          "top": 123,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_MyLocation_Widget_5",
+        "name": "MyLocation",
+        "label": "My Location"
+      },
+      {
+        "uri": "widgets/Navigate/Widget",
+        "position": {
+          "left": 10,
+          "top": 161,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_Navigate_Widget_6",
+        "name": "Navigate",
+        "label": "Navigate"
+      },
+      {
+        "uri": "widgets/Compass/Widget",
+        "position": {
+          "right": 10,
+          "top": 10,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_Compass_Widget_7",
+        "name": "Compass",
+        "label": "Compass"
+      },
+      {
+        "uri": "widgets/FullScreen/Widget",
+        "position": {
+          "right": 10,
+          "top": 52,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_FullScreen_Widget_8",
+        "name": "FullScreen",
+        "label": "Full Screen"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 0,
+          "bottom": 16,
+          "relativeTo": "map"
+        },
+        "version": "2.0.1",
+        "id": "widgets_Coordinate_Widget_9",
+        "name": "Coordinate",
+        "label": "Coordinate"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.0.1",
+        "id": "widgets_Splash_Widget_10",
+        "name": "Splash",
+        "label": "Splash"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": true,
+    "2D": false,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "7118fb3903a7439e9bfdb2c42346ee93",
+    "mapOptions": {
+      "initialState": {
+        "viewpoint": {
+          "scale": 78851.20699300274,
+          "rotation": 355.7956487497463,
+          "targetGeometry": {
+            "x": -8233636.647735577,
+            "y": 4974700.831397583,
+            "z": -0.0006487937644124031,
+            "spatialReference": {
+              "wkid": 102100,
+              "latestWkid": 3857
+            }
+          },
+          "camera": {
+            "position": {
+              "x": -8233656.4606550895,
+              "y": 4974431.314744606,
+              "z": 27155.68837734498,
+              "spatialReference": {
+                "wkid": 102100,
+                "latestWkid": 3857
+              }
+            },
+            "heading": 4.204351250253711,
+            "tilt": 0.4319887826904574
+          }
+        }
+      }
+    },
+    "id": "map",
+    "portalUrl": "http://ps-dbs.maps.arcgis.com/"
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "uri": "widgets/Environment/Widget",
+        "version": "2.0.1",
+        "id": "widgets_Environment_Widget_11",
+        "name": "Environment",
+        "label": "Environment",
+        "index": 2
+      },
+      {
+        "name": "ParkWhizWidget",
+        "label": "Park Whiz Widget",
+        "version": "0.0.1",
+        "IsController": false,
+        "uri": "widgets/ParkWhizWidget/Widget",
+        "config": "configs/ParkWhizWidget/config_Park Whiz Widget.json",
+        "index": 4,
+        "id": "widgets_ParkWhizWidget_Widget_12"
+      }
+    ],
+    "groups": []
+  },
+  "loadingPage": {
+    "backgroundColor": "#508dca",
+    "backgroundImage": {
+      "visible": false
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "configs/loading/images/predefined_loading_1.gif",
+      "width": 58,
+      "height": 29
+    }
+  },
+  "wabVersion": "2.0.1",
+  "isTemplateApp": true,
+  "isWebTier": false
+}

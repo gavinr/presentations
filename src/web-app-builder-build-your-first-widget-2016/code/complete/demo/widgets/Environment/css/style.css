@@ -1,0 +1,32 @@
+.jimu-widget-environment .time-zone{
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.jimu-widget-environment .sun-time{
+  width: 40%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  border:1px solid #ccc;
+}
+
+.jimu-rtl .jimu-widget-environment .sun-time{
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.jimu-widget-environment .shadowing-title{
+}
+
+.jimu-widget-environment .shadow-container{
+  margin-top: 40px;
+}
+
+.jimu-widget-environment .direct-shadow{
+  margin-top: 5px;
+}
+
+.jimu-widget-environment .diffuse-shadow{
+  margin-top: 5px;
+}
