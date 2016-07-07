@@ -1,0 +1,18 @@
+.park-whiz-widget h3 {
+  font-size: 1.2em;
+}
+.park-whiz-widget h3, p {
+  margin-top: 0;
+}
+.park-whiz-widget table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+.park-whiz-widget td {
+  padding: 5px;
+  border: 1px solid gray;
+}
+.park-whiz-widget td.reserveNowWrapper {
+  text-align: center;
+}
+/* add additional custom styles */

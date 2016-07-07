@@ -1,0 +1,29 @@
+.jimu-widget-zoom{
+  border: 0;
+  font-size: 14px;
+}
+
+.jimu-widget-zoom .esri-zoom .esri-button{
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  background-color: #fff;
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.jimu-widget-zoom .esri-icon-plus, .jimu-widget-zoom .esri-icon-minus{
+  line-height: 32px;
+}
+
+.jimu-widget-zoom .esri-zoom .esri-button:hover{
+  opacity: 1;
+}
+
+.jimu-widget-zoom .esri-zoom-out{
+  border-top: 0 !important;
+}
