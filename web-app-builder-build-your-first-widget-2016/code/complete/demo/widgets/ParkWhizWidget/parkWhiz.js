@@ -6,7 +6,7 @@ define(['esri/request'], function (esriRequest) {
             var apiKey = arguments.length <= 2 || arguments[2] === undefined ? '' : arguments[2];
 
             return esriRequest({
-                url: 'http://api.parkwhiz.com/search',
+                url: 'https://crossorigin.me/http://api.parkwhiz.com/search',
                 content: {
                     key: apiKey,
                     lat: lat,
