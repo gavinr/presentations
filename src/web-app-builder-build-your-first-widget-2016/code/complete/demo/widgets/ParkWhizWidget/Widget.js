@@ -1,6 +1,10 @@
-define(['dojo/_base/declare', 'jimu/BaseWidget', 'dojo/on', './parkWhiz', './ParkingInfo', 'esri/layers/GraphicsLayer', 'esri/Graphic', 'esri/geometry/Point', 'esri/symbols/SimpleMarkerSymbol'], function (declare, BaseWidget, on, parkWhiz, ParkingInfo, GraphicsLayer, Graphic, Point, SimpleMarkerSymbol) {
+define(['dojo/_base/declare', 'jimu/BaseWidget', 'dojo/on', './parkWhiz', './ParkingInfo', 'esri/layers/GraphicsLayer', 'esri/Graphic', 'esri/geometry/Point', 'esri/symbols/SimpleMarkerSymbol','esri/config'], function (declare, BaseWidget, on, parkWhiz, ParkingInfo, GraphicsLayer, Graphic, Point, SimpleMarkerSymbol, esriConfig) {
+
   return declare([BaseWidget], {
     baseClass: 'park-whiz-widget',
+    startup: function startup() {
+      esriConfig.request.corsEnabledServers.push('crossorigin.me');
+    },
     onOpen: function onOpen() {
       var _this = this;
 
