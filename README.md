@@ -12,4 +12,4 @@
 | [Build Your First Web AppBuilder Widget in 15 Minutes](http://gavinr.github.io/presentations/web-app-builder-build-your-first-widget-2015/slides.pdf)  | Esri User Conference 2015  | 2015-07 |
 |  [Web AppBuilder Short Technical Overview](http://gavinr.github.io/presentations/web-app-builder-short-overview/slides/)  | STL Esri User Group  | 2015-03 |
 | [Rocking and Tooling your GeoDev Environment](http://jpeterson.github.io/devsummit-2015-geodev-environment)  | Esri Dev Summit 2015  | 2015-03 |
-| [Tools and Techniques for Web AppBuilder Development](http://gavinr.github.io/web-appbuilder-tools-techniques-dev-summit-2015)  | ri Dev Summit 2015  | 2015-03 |
+| [Tools and Techniques for Web AppBuilder Development](http://gavinr.github.io/web-appbuilder-tools-techniques-dev-summit-2015)  | Esri Dev Summit 2015  | 2015-03 |
