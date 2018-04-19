@@ -6,6 +6,27 @@
  * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
  */
 
+ // custom:
+.reveal section {
+	img {
+		border:none !important;
+	}
+	img.noBackground {
+		background: rgba(255, 255, 255, 0);
+	}
+	.topSmall {
+		font-size: 12px;
+	}
+	.smallNote {
+		font-style: italic;
+		font-size: 0.9rem;
+	}
+	.topLeft {
+		top: 0px;
+		left: 0px;
+	}
+}
+
 
 /*********************************************
  * RESET STYLES
@@ -1715,3 +1736,4 @@ $controlsArrowAngleActive: 36deg;
 .zoomed .reveal .roll span:after {
 	visibility: hidden;
 }
+
