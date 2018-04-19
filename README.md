@@ -2,6 +2,9 @@
 
 | Talk  | Event | Date |
 | ------------- | ------------- | ------------- |
+| [Web AppBuilder for ArcGIS: Development tools and Techniques](https://github.com/gavinr/web-appbuilder-tools-techniques-dev-summit-2018)  | Esri Dev Summit 2018  | 2018-03 |
+| [Tools for the Modern Web Developer](http://slides.com/joshpeterson/devsummit18#/)  | Esri Dev Summit 2018  | 2018-03 |
+| Web AppBuilder for ArcGIS: Customizing and Extending  | Esri Dev Summit 2018  | 2018-03 |
 | [Web AppBuilder for ArcGIS: Development tools and Techniques](https://github.com/gavinr/web-appbuilder-tools-techniques-dev-summit-2017)  | Esri Dev Summit 2017  | 2017-03 |
 | [Tools for the Modern Web Developer](https://github.com/jpeterson/devsummit-2017-modern-tools)  | Esri Dev Summit 2017  | 2017-03 |
 | Web AppBuilder for ArcGIS: Customizing and Extending  | Esri Dev Summit 2017  | 2017-03 |
