@@ -1,0 +1,12 @@
+section {
+  &.contentBackground {
+    background-color: rgba(0, 0, 0, 0.85);
+    ul {
+      text-rendering: auto;
+    }
+  }
+  &.noBullets ul {
+    list-style-type: none;
+    margin: 0;
+  }
+}
