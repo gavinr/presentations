@@ -31,6 +31,8 @@ function getResponse(text) {
     // return a link to the website.
     return 'Check out our website at meetup.com/jstl-meetup';
   }
+
+  // else:
   return 'Sorry, we could not follow your question. Please ask in a different way.';
 }
 exports.getResponse = getResponse;
