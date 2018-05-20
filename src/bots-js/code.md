@@ -122,6 +122,8 @@ then go to:
 
 ## Debugging
 
+- add console.log() and then run `claudia update` before showing:
+
 https://github.com/jorgebastida/awslogs
 
 `pip install awslogs`
