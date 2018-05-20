@@ -4,11 +4,13 @@
 
 https://www.claudiajs.com/tutorials/installing.html
 
+
 1. Remove old lambda functions and api gateways (jSTL), and IAM roles (`*-executor`)
-2. login to slack and remove old slack slash commands
-2. Create IAM user named "claudia"
-3. `pip install awscli`
-4. `aws configure`
+2. login to slack (https://gavinr.slack.com/messages) and remove old slack slash commands
+3. Also Remove old slack messages in test channel 
+4. Create IAM user named "claudia"
+5. `pip install awscli`
+6. `aws configure`
 
 ## Hello World
 
@@ -74,18 +76,18 @@ then go to:
   - create `.eslintrc.js`:
     ```
     module.exports = {
-    "extends": "airbnb-base",
-    "env": {
-        "mocha": true
-    },
-    "rules": {
-        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-        "no-param-reassign": ["warn", { "props": false }],
-        "no-underscore-dangle": "off",
-        "max-len": "off",
-        "linebreak-style": "off"
-    }
-  };
+      "extends": "airbnb-base",
+      "env": {
+          "mocha": true
+      },
+      "rules": {
+          "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+          "no-param-reassign": ["warn", { "props": false }],
+          "no-underscore-dangle": "off",
+          "max-len": "off",
+          "linebreak-style": "off"
+      }
+    };
   ```
   - package.json: `"test": "mocha --timeout 10000"`
   - create `test/test.js`
@@ -107,6 +109,7 @@ then go to:
     it('should respond correctly to a nonsese question.', () => expect(jStlBot.getResponse('sdfsfsdf?')).to.equal('Sorry, we could not follow your question. Please ask in a different way.'));
   });
   ```
+  - run tests: `npm test`
 
 
 ## Deploy to Twilio
@@ -114,6 +117,8 @@ then go to:
 1. https://www.twilio.com/console/
 
 `claudia update --configure-twilio-sms-bot`
+
+2. Then fill in info, and test at google voice, https://voice.google.com/messages
 
 ## Debugging
 
@@ -163,3 +168,5 @@ https://github.com/jorgebastida/awslogs
   ```
   it('should respond correctly to a question about the next meeting.', () => expect(jStlBot.getResponse('When is the next meeting?')).to.eventually.have.string('The next event is'));
   ```
+
+  - run `claudia update` and then see it work in awslogs
