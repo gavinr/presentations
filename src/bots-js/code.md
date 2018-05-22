@@ -4,6 +4,7 @@
 
 https://www.claudiajs.com/tutorials/installing.html
 
+https://gavinr.github.io/presentations/bots-js/slides/#/
 
 1. Remove old lambda functions and api gateways (jSTL), and IAM roles (`*-executor`)
 2. login to slack (https://gavinr.slack.com/messages) and remove old slack slash commands
@@ -160,6 +161,8 @@ https://github.com/jorgebastida/awslogs
     return 'There are no events scheduled.';
   }, err => console.error(err));
   ```
+
+- run `claudia update`  in background then:
 - test.js:
 
   ```
@@ -171,4 +174,4 @@ https://github.com/jorgebastida/awslogs
   it('should respond correctly to a question about the next meeting.', () => expect(jStlBot.getResponse('When is the next meeting?')).to.eventually.have.string('The next event is'));
   ```
 
-  - run `claudia update` and then see it work in awslogs
+  - hen see it work in awslogs
