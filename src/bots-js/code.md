@@ -12,6 +12,7 @@ https://gavinr.github.io/presentations/bots-js/slides/#/
 4. Create IAM user named "claudia"
 5. `pip install awscli`
 6. `aws configure`
+7. Open separate terminal open to "bots-js"
 
 ## Hello World
 
