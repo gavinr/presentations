@@ -24,8 +24,30 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-image="images/time-zones.jpg">
+					<div style="background-color: rgba(0,0,0,0.8)">
+						<h2>Maps in JS</h2>
+						Gavin Rehkemper<br />
+						<a href="https://gavinr.com">gavinr.com</a>
+					</div>
+				</section>
+				<section data-background-image="images/time-zones.jpg"></section>
+				<section>Why Maps?</section>
+				<section data-markdown>
+					[![](images/parks-tabular.png)](https://www.stlouis-mo.gov/data/parks.cfm)
+				</section>
+				<section data-markdown data-transition="fade">
+					![](images/parks-map.png)
+				</section>
+				<section data-markdown data-transition="fade">
+					![](images/parks-map-stl-city.png)
+				</section>
+				<section data-markdown data-transition="fade">
+					![](images/parks-map-labels.png)
+				</section>
+				<section data-markdown data-transition="fade">
+					[![](images/parks-map-with-neighborhoods.png)](https://gavin-r.maps.arcgis.com/apps/Minimalist/index.html?webmap=cce1c4747cac4a119c3c145c97a55e3b)
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +59,8 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				progress: false,
+				history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
