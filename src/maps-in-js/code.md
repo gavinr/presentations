@@ -43,4 +43,20 @@ var stations = [
 
 ## Leaflet
 
+New Point Symbol:
+
+```
+  var pointSymbol = {
+    type: "picture-marker",  // autocasts as new PictureMarkerSymbol()
+    url: "https://static.arcgis.com/images/Symbols/Shapes/BlueStarLargeB.png",
+    width: "64px",
+    height: "64px"
+  };
+```
+
 ## ArcGIS
+
+Add points:
+
+```
+```
