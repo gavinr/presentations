@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Maps in JS</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+		.slide-vertical-top {
+			top: 0px !important;
+		}
+		.reveal section img {
+			border: 0px; background-color: rgba(0,0,0,0); box-shadow: none;
+		}
+		#left {
+			left:-8.33%;
+			text-align: left;
+			float: left;
+			width:50%;
+			z-index:-10;
+		}
+
+		#right {
+			left:31.25%;
+			top: 75px;
+			float: right;
+			text-align: right;
+			z-index:-10;
+			width:50%;
+		}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<base target="_blank">
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/time-zones.jpg">
+					<div style="background-color: rgba(0,0,0,0.8)">
+						<h2>Maps in JS</h2>
+						Gavin Rehkemper<br />
+						<a href="https://gavinr.com">gavinr.com</a>
+					</div>
+				</section>
+				<section data-background-image="images/time-zones.jpg"></section>
+				<section>Why Maps?</section>
+				<section data-markdown>
+					[![](images/parks-tabular.png)](https://www.stlouis-mo.gov/data/parks.cfm)
+				</section>
+				<section data-markdown data-transition="fade">
+					![](images/parks-map.png)
+				</section>
+				<section data-markdown data-transition="fade">
+					![](images/parks-map-stl-city.png)
+				</section>
+				<section data-markdown data-transition="fade">
+					![](images/parks-map-labels.png)
+				</section>
+				<section data-markdown data-transition="fade">
+					[![](images/parks-map-with-neighborhoods.png)](https://gavin-r.maps.arcgis.com/apps/Minimalist/index.html?webmap=cce1c4747cac4a119c3c145c97a55e3b)
+				</section>
+
+
+
+				<section>
+					<img src="images/logos.png">
+				</section>
+
+				<section>
+					<img src="images/3-logos.png">
+				</section>
+
+				<section  class="slide-vertical-top" data-background-image="images/jamie-street-368704-unsplash.jpg">
+					<h1 style="background-color: rgba(0,0,0,0.8); padding: 30px;">First, a detour</h1>
+				</section>
+
+				<!-- GIS TERMS: -->
+				<section data-markdown>
+					## Layer
+					![](images/gis.png)
+				</section>
+
+				<section data-markdown>
+					## Basemap
+					[![](images/basemaps.png)](https://www.arcgis.com/home/webmap/viewer.html)
+				</section>
+
+				<section>
+					<h2>Geometry</h2>
+					<p class="stretch"><img src="images/point-line-polygon.jpg"></p>
+				</section>
+
+				<section data-markdown>
+						```
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								-91.0546875,
+								40.84706035607122
+							]
+						}
+						```
+					</section>
+
+				<section>
+					<h2>Spatial Reference</h2>
+					
+					<div id="left">
+						<p data-markdown>![latitude/longitude](images/latlongrid.gif)</p>
+						<!-- more Elements -->
+					</div>
+					<div id="right">
+						<p data-markdown>- `4326` - "[WGS84](https://en.wikipedia.org/wiki/Wgs84)" or more commonly: latitude/longitude </p>
+						<p data-markdown>- `3857` - "[Web Mercator](https://en.wikipedia.org/wiki/Web_Mercator_projection)" or more commonly: latitude/longitude</p>
+						<!-- more Elements -->
+					</div>
+				
+				</section>
+
+				<!-- GOOGLE MAPS: -->
+				<section data-markdown>
+					## Google Maps JavaScript API
+
+					- Great for basic maps
+					- Business Data
+					- Cost changes
+					- ~~Quick~~
+					- [developers.google.com/maps](https://developers.google.com/maps)
+				</section>
+
+				<section>
+					<h2>Basic Map</h2>
+					<iframe data-src="https://codepen.io/gavinr/full/NobZZd" style="height: 400px; width: 800px;"></iframe><br />
+					<a href="https://codepen.io/gavinr/pen/NobZZd" style="font-size: 10px;">Code</a>
+				</section>
+
+				<section data-markdown>
+					## Markers
+					[![](images/markers.png)](https://codepen.io/gavinr/pen/yZVmRQ?editors=0010)
+				</section>
+
+
+
+
+
+				<!-- LEAFLET: -->
+				<section data-markdown>
+					## Leaflet JS
+				
+					- Quick
+					- Custom Basemaps
+					- Many Layer types
+					- Free
+					- [leafletjs.com](https://leafletjs.com/)
+				</section>
+
+				<section>
+					<h3>Basic Map</h3>
+					<iframe data-src="https://codepen.io/gavinr/full/pGRoNE" style="height: 400px; width: 800px;"></iframe><br />
+					<a href="https://codepen.io/gavinr/pen/WPRNQb" style="font-size: 10px;">Code</a>
+				</section>
+
+				<section>
+					<h3>Basemaps</h3>
+					<iframe data-src="https://leaflet-extras.github.io/leaflet-providers/preview/" style="height: 500px; width: 800px;"></iframe><br />
+					<a href="https://leaflet-extras.github.io/leaflet-providers/preview/" style="font-size: 10px;">Code</a>
+				</section>
+
+				<section data-markdown>
+					### Layers
+				
+					- [Markers](https://codepen.io/gavinr/pen/MLJYgQ?editors=0010)
+					- [GeoJSON](https://codepen.io/gavinr/pen/Gzrgpo?editors=0010) ([spec](https://tools.ietf.org/html/rfc7946))
+					- TileLayer
+					- VideoOverlay
+					- Many More!
+				</section>
+
+				<!-- TODO: ARCGIS -->
+				<section data-markdown>
+					## ArcGIS API for JavaScript
+				
+					- Quick
+					- 2D or 3D
+					- Widgets
+					- Free or Commercial Dev License
+					- [js.arcgis.com](https://js.arcgis.com/)
+				</section>
+
+				<section>
+					<h3>Basic Map</h3>
+					<iframe data-src="https://codepen.io/gavinr/full/xMWyqZ" style="height: 400px; width: 800px;"></iframe><br />
+					<a href="https://codepen.io/gavinr/pen/xMWyqZ" style="font-size: 10px;">Code</a>
+				</section>
+
+				<section>
+					<h3>Geometry + Style + Attributes = GRAPHIC</h3>
+					<iframe data-src="https://codepen.io/gavinr/full/jdzeZR" style="height: 400px; width: 800px;"></iframe><br />
+					<a href="https://codepen.io/gavinr/pen/jdzeZR" style="font-size: 10px;">Code</a>
+				</section>
+
+				<section>
+						<h3>Todo: FeatureLayer with UniqueValueRenderer</h3>
+					</section>
+
+				<section data-markdown>
+					## [Widgets](https://codepen.io/gavinr/pen/QYmZXe)
+
+					- Legend
+					- Measurement
+					- Bookmarks
+					- etc
+					
+				</section>
+
+				<section data-markdown>
+						## [3D](https://codepen.io/gavinr/pen/omqQXE)
+
+						- `ground: "world-elevation"`
+						- [3D Measurement Widget](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=widgets-measurement-3d)
+					</section>
+	
+
+				<!-- TODO: SUMMARY -->
+
+
+				<section data-markdown>
+					# Thank you!
+				
+					- [gavinr.com](https://gavinr.com)
+					- [twitter.com/gavinr](https://twitter.com/gavinr)
+					- [github.com/gavinr/presentations](https://github.com/gavinr/presentations)
+				
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				progress: false,
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

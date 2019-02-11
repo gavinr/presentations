@@ -1,0 +1,25 @@
+{
+  "name": "jstlbot",
+  "version": "1.0.0",
+  "description": "Bot for jSTL meetup group.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "keywords": [
+    "claudia.js"
+  ],
+  "author": "Gavin Rehkemper",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "claudia-bot-builder": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "meetup-api": "^1.4.32",
+    "mocha": "^5.1.1",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
