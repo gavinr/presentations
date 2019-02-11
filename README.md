@@ -2,6 +2,7 @@
 
 | Talk  | Event | Date |
 | ------------- | ------------- | ------------- |
+| [Maps in JS](https://github.com/gavinr/presentations/tree/master/src/maps-in-js)  | jSTL  | 2019-02 |
 | [Bots + JS](https://github.com/gavinr/presentations/tree/master/src/bots-js)  | jSTL  | 2018-05 |
 | [Web AppBuilder for ArcGIS: Development tools and Techniques](https://github.com/gavinr/web-appbuilder-tools-techniques-dev-summit-2018)  | Esri Dev Summit 2018  | 2018-03 |
 | [Tools for the Modern Web Developer](http://slides.com/joshpeterson/devsummit18#/)  | Esri Dev Summit 2018  | 2018-03 |
