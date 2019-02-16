@@ -56,7 +56,27 @@ New Point Symbol:
 
 ## ArcGIS
 
-Add points:
+Renderer:
 
 ```
+renderer: {
+  type: "unique-value",  // autocasts as new UniqueValueRenderer()
+  field: "CITY",
+  defaultSymbol: { type: "simple-marker", color: "red" },  // autocasts as new SimpleFillSymbol()
+  uniqueValueInfos: [{
+    // All features with value of "North" will be blue
+    value: "St. Louis",
+    symbol: {
+      type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+      color: "blue"
+    }
+  }, {
+    // All features with value of "East" will be green
+    value: "Clayton",
+    symbol: {
+      type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+      color: "green"
+    }
+  }]
+},
 ```
