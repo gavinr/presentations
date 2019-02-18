@@ -43,6 +43,11 @@ var stations = [
 
 ## Leaflet
 
+
+
+## ArcGIS
+
+
 New Point Symbol:
 
 ```
@@ -54,9 +59,11 @@ New Point Symbol:
   };
 ```
 
-## ArcGIS
+
 
 Renderer:
+
+Unique Value Renderer:
 
 ```
 renderer: {
@@ -79,4 +86,40 @@ renderer: {
     }
   }]
 },
+```
+
+CLASS BREAKS RENDERER:
+
+```
+[{
+        minValue: 1500,  
+        maxValue: 1799,
+        symbol: {
+          type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+          style: "circle",
+          color: "#fee6ce",
+          size: "12px"
+        },  
+        label: "3-5pm"
+      },{
+        minValue: 1800,  
+        maxValue: 2199,
+        symbol: {
+          type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+          style: "circle",
+          color: "#fdae6b",
+          size: "12px"
+        },  
+        label: "6-9pm"
+      },{
+        minValue: 2200,  
+        maxValue: 2400,
+        symbol: {
+          type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+          style: "circle",
+          color: "#e6550d",
+          size: "12px"
+        },  
+        label: "10pm-midnight"
+      }]
 ```
