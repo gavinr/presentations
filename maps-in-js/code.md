@@ -43,6 +43,11 @@ var stations = [
 
 ## Leaflet
 
+
+
+## ArcGIS
+
+
 New Point Symbol:
 
 ```
@@ -54,9 +59,67 @@ New Point Symbol:
   };
 ```
 
-## ArcGIS
 
-Add points:
+
+Renderer:
+
+Unique Value Renderer:
 
 ```
+renderer: {
+  type: "unique-value",  // autocasts as new UniqueValueRenderer()
+  field: "CITY",
+  defaultSymbol: { type: "simple-marker", color: "red" },  // autocasts as new SimpleFillSymbol()
+  uniqueValueInfos: [{
+    // All features with value of "North" will be blue
+    value: "St. Louis",
+    symbol: {
+      type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+      color: "blue"
+    }
+  }, {
+    // All features with value of "East" will be green
+    value: "Clayton",
+    symbol: {
+      type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+      color: "green"
+    }
+  }]
+},
+```
+
+CLASS BREAKS RENDERER:
+
+```
+[{
+        minValue: 1500,  
+        maxValue: 1799,
+        symbol: {
+          type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+          style: "circle",
+          color: "#fee6ce",
+          size: "12px"
+        },  
+        label: "3-5pm"
+      },{
+        minValue: 1800,  
+        maxValue: 2199,
+        symbol: {
+          type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+          style: "circle",
+          color: "#fdae6b",
+          size: "12px"
+        },  
+        label: "6-9pm"
+      },{
+        minValue: 2200,  
+        maxValue: 2400,
+        symbol: {
+          type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+          style: "circle",
+          color: "#e6550d",
+          size: "12px"
+        },  
+        label: "10pm-midnight"
+      }]
 ```
