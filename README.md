@@ -5,7 +5,7 @@
 | Tools for the Modern Web Developer                                                                                                                               | Esri Dev Summit 2020      | 2020-03 |
 | PS Developer Spotlight: Typescript                                                                                                                               | Esri Dev Summit 2020      | 2020-03 |
 | PS Developer Spotlight: Svelte                                                                                                                                   | Esri Dev Summit 2020      | 2020-03 |
-| [ArcGIS API for JavaScript: Using Frameworks (Svelte)](https://github.com/gavinr/js-frameworks-2020)                                                             | Esri Dev Summit 2020      | 2020-03 |
+| [ArcGIS API for JavaScript: Using Frameworks (Svelte)](https://github.com/gavinr/presentations/tree/master/src/js-frameworks-2020)                                                             | Esri Dev Summit 2020      | 2020-03 |
 | [ArcGIS Experience Builder: Building your First Widget](https://github.com/gavinr/presentations/tree/master/src/experience-builder-build-your-first-widget-2020) | Esri Dev Summit 2020      | 2020-03 |
 | [Web AppBuilder for ArcGIS: Customizing and Extending](https://github.com/gavinr/web-appbuilder-customizing-and-extending-dev-summit-2020)                       | Esri Dev Summit 2020      | 2020-03 |
 | [Web AppBuilder for ArcGIS: Customizing and Extending](https://github.com/gavinr/web-appbuilder-customizing-and-extending-uc-2019)                               | Esri User Conference 2019 | 2019-07 |
