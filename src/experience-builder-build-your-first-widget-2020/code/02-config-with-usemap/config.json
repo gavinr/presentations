@@ -104,6 +104,7 @@
             "height": "32px",
             "bottom": "0px"
           },
+          "widgetId": "widget_4",
           "setting": {
             "hCenter": false,
             "vCenter": true
@@ -127,7 +128,8 @@
             }
           }
         }
-      }
+      },
+      "label": "Default"
     },
     "layout_3": {
       "type": "FIXED",
@@ -146,7 +148,8 @@
           "bbox": {},
           "widgetId": "widget_15"
         }
-      }
+      },
+      "label": "Controller layout"
     },
     "layout_4": {
       "type": "FIXED",
@@ -165,7 +168,8 @@
           "bbox": {},
           "widgetId": "widget_15"
         }
-      }
+      },
+      "label": "Controller layout"
     },
     "layout_5": {
       "content": {
@@ -181,7 +185,8 @@
       },
       "order": [
         "0"
-      ]
+      ],
+      "label": "Open widget layout"
     },
     "layout_6": {
       "content": {
@@ -197,7 +202,8 @@
       },
       "order": [
         "0"
-      ]
+      ],
+      "label": "Open widget layout"
     },
     "layout_7": {
       "type": "FIXED",
@@ -227,7 +233,8 @@
             }
           }
         }
-      }
+      },
+      "label": "First"
     },
     "layout_14": {
       "type": "FIXED",
@@ -257,13 +264,16 @@
             }
           }
         }
-      }
+      },
+      "label": "Second"
     },
     "layout_15": {
-      "type": "FIXED"
+      "type": "FIXED",
+      "label": "Map FixedLayout"
     },
     "layout_16": {
-      "type": "FIXED"
+      "type": "FIXED",
+      "label": "Map FixedLayout"
     },
     "layout_17": {
       "type": "FIXED",
@@ -342,6 +352,24 @@
           },
           "isPending": true
         },
+        "2": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "364px",
+            "top": "0px",
+            "width": "207px",
+            "height": "50px",
+            "bottom": "0px"
+          },
+          "widgetId": "widget_4",
+          "setting": {
+            "hCenter": false,
+            "autoProps": {
+              "height": true
+            }
+          },
+          "isPending": true
+        },
         "3": {
           "type": "WIDGET",
           "bbox": {
@@ -367,8 +395,10 @@
       "order": [
         "0",
         "1",
+        "2",
         "3"
-      ]
+      ],
+      "label": "Default"
     },
     "layout_19": {
       "type": "FIXED",
@@ -400,26 +430,31 @@
         "2": {
           "type": "WIDGET",
           "bbox": {
-            "left": "0px",
-            "top": "25px",
-            "width": "356px",
-            "height": "400px"
+            "left": "0",
+            "top": "0",
+            "right": "0",
+            "bottom": "0"
           },
           "widgetId": "widget_11",
           "setting": {
-            "fullsize": true
+            "autoProps": {
+              "width": true,
+              "height": true
+            }
           }
         }
       },
       "order": [
         "1",
         "2"
-      ]
+      ],
+      "label": "First"
     },
     "layout_20": {
       "type": "FIXED",
       "content": {},
-      "order": []
+      "order": [],
+      "label": "Second"
     },
     "layout_21": {
       "type": "FIXED",
@@ -495,6 +530,22 @@
             "hCenter": false
           }
         },
+        "2": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "364px",
+            "top": "0px",
+            "width": "207px",
+            "height": "32px",
+            "bottom": "0px"
+          },
+          "widgetId": "widget_4",
+          "setting": {
+            "hCenter": false,
+            "vCenter": true
+          },
+          "isPending": true
+        },
         "3": {
           "type": "WIDGET",
           "bbox": {
@@ -517,8 +568,10 @@
       "order": [
         "0",
         "1",
+        "2",
         "3"
-      ]
+      ],
+      "label": "Default"
     },
     "layout_23": {
       "type": "FIXED",
@@ -537,7 +590,8 @@
       "order": [
         "0",
         "1"
-      ]
+      ],
+      "label": "Controller layout"
     },
     "layout_24": {
       "content": {
@@ -553,12 +607,14 @@
       },
       "order": [
         "0"
-      ]
+      ],
+      "label": "Open widget layout"
     },
     "layout_25": {
       "type": "FIXED",
       "content": {},
-      "order": []
+      "order": [],
+      "label": "First"
     },
     "layout_29": {
       "type": "FIXED",
@@ -588,10 +644,8 @@
       },
       "order": [
         "0"
-      ]
-    },
-    "layout_30": {
-      "type": "FIXED"
+      ],
+      "label": "Second"
     }
   },
   "widgets": {
@@ -644,21 +698,12 @@
           "linkParam": {},
           "scale": "Fit",
           "imageParam": {
-            "url": "${appResourceUrl}/images/widget_2/1581625706049.jpg",
-            "originalUrl": "${appResourceUrl}/images/widget_2/1581625706049.jpg",
-            "fileName": "1581625706049.jpg",
-            "originalName": "soil-upsplash-sm.jpg",
-            "imgSourceType": "BY_UPLOAD",
-            "fileFormat": "image/jpeg",
-            "originalId": "1581625706049",
             "cropParam": {
-              "svgViewBox": "0 0 28 28",
+              "cropShape": "circle",
               "svgPath": "M28 14c0 7.732-6.268 14-14 14S0 21.732 0 14 6.268 0 14 0s14 6.268 14 14z",
-              "cropShape": "circle"
+              "svgViewBox": "0 0 28 28"
             }
-          },
-          "imgSourceType": "",
-          "srcExpression": null
+          }
         },
         "styleConfig": {}
       },
@@ -669,7 +714,7 @@
       "id": "widget_3",
       "uri": "widgets/common/text/",
       "config": {
-        "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24px;\">﻿My Mapping App</span></p>",
+        "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24px;\">﻿My Mapping App<span class=\"ql-cursor\">﻿</span></span></p>",
         "placeholder": "<p><span style='font-size: 24px; color: rgb(255, 255, 255);'>Here is the title</span></p>",
         "style": {
           "verticalAlign": "center",
@@ -680,6 +725,22 @@
       },
       "version": "1.0.0",
       "label": "Text 1"
+    },
+    "widget_4": {
+      "id": "widget_4",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 16px;\">﻿ </span></p>",
+        "placeholder": "<p><span style='font-size: 16px; color: rgb(255, 255, 255);'>Here is the subtitle</span></p>",
+        "style": {
+          "verticalAlign": "center",
+          "wrap": true,
+          "overflow": "scroll",
+          "padding": "p-1"
+        }
+      },
+      "version": "1.0.0",
+      "label": "Text 2"
     },
     "widget_5": {
       "id": "widget_5",
@@ -696,6 +757,7 @@
           "advanced": false,
           "card": {
             "showLabel": false,
+            "labelGrowth": 0,
             "avatar": {
               "type": "primary",
               "size": "default",
@@ -716,12 +778,12 @@
           "MEDIUM": "layout_24"
         }
       },
-      "version": "1.0.0",
-      "label": "Widget Controller 1",
       "widgets": [
         "widget_14",
         "widget_15"
-      ]
+      ],
+      "version": "1.0.0",
+      "label": "Widget Controller 1"
     },
     "widget_6": {
       "id": "widget_6",
@@ -812,6 +874,34 @@
           "canZoom": true,
           "canHome": true,
           "canSearch": true
+        },
+        "initialMapDataSourceID": "dataSource_2",
+        "isUseCustomMapState": true,
+        "initialMapState": {
+          "viewPoint": {
+            "rotation": 0,
+            "scale": 18055.9548215,
+            "targetGeometry": {
+              "spatialReference": {
+                "latestWkid": 3857,
+                "wkid": 102100
+              },
+              "x": -10050299.374666698,
+              "y": 4669969.210552861
+            }
+          },
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 3857,
+              "wkid": 102100
+            },
+            "xmin": -10052086.090202862,
+            "ymin": 4668469.133872766,
+            "xmax": -10048512.659130534,
+            "ymax": 4671469.287232956
+          },
+          "rotation": 0,
+          "viewType": "2d"
         }
       },
       "layouts": {
@@ -821,7 +911,12 @@
         }
       },
       "version": "1.0.0",
-      "label": "Map 1"
+      "label": "Map 1",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2"
+        }
+      ]
     },
     "widget_12": {
       "id": "widget_12",
@@ -1056,23 +1151,9 @@
     "widget_18": {
       "uri": "widgets/simple/",
       "version": "1.0.0",
-      "icon": {
-        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 32\"><path d=\"M10.942 1.099c2.56-.213 5.227.64 7.36 2.133 3.2 2.24 5.12 6.187 4.587 10.027-.32 2.24-1.28 4.373-2.347 6.4-2.027 3.733-4.693 7.04-7.467 10.24-.32.32-.533.64-.853.853-.427.427-1.173.32-1.493-.107-2.027-2.24-3.947-4.587-5.653-7.04-1.493-2.133-2.88-4.373-3.84-6.827-.533-1.28-.96-2.667-.96-4.053-.107-2.667.747-5.44 2.56-7.573 1.92-2.453 4.907-3.84 8.107-4.053zM9.556 3.232c-2.027.427-3.947 1.6-5.227 3.2a8.366 8.366 0 00-2.027 5.44c0 1.813.64 3.52 1.28 5.12a33.403 33.403 0 003.84 6.187 48.471 48.471 0 004.16 5.12c2.56-2.88 5.013-5.973 6.933-9.387.96-1.707 1.813-3.413 2.24-5.333s0-3.84-.853-5.547c-.96-1.813-2.56-3.307-4.373-4.16-1.92-.853-4.053-.96-5.973-.64zm1.493 2.347c1.6-.213 3.2.32 4.373 1.387 1.173.96 1.813 2.453 1.92 3.947s-.533 2.88-1.493 3.947c-1.067 1.173-2.56 1.813-4.16 1.813-1.493 0-3.093-.64-4.16-1.707-.96-.853-1.6-2.347-1.6-3.733 0-1.493.533-2.987 1.6-3.947.96-1.067 2.133-1.6 3.52-1.707zm-.213 2.133c-1.28.213-2.347 1.28-2.667 2.56-.32 1.173 0 2.347.747 3.2 1.173 1.28 3.2 1.6 4.693.64 1.387-.853 2.027-2.667 1.387-4.16-.533-1.707-2.453-2.667-4.16-2.24z\"></path></svg>",
-        "properties": {
-          "filename": "map-pin.svg",
-          "originalName": "map-pin.svg",
-          "path": [
-            "general",
-            "mapPin"
-          ],
-          "color": "#fff",
-          "size": 16,
-          "inlineSvg": true
-        }
-      },
-      "label": "Map Extent",
+      "label": "simple 1",
       "config": {
-        "exampleConfigProperty": "test345"
+        "exampleConfigProperty": "test"
       },
       "useMapWidgetIds": [
         "widget_11"
@@ -1082,7 +1163,7 @@
   },
   "customTheme": {
     "colors": {
-      "primary": "#01190d",
+      "primary": "#442b57",
       "secondary": "#ffd11c",
       "info": "#09acf8",
       "success": "#00cca5",
@@ -1100,7 +1181,7 @@
   },
   "template": "jewelrybox",
   "attributes": {
-    "portalUrl": "https://prof-services.maps.arcgis.com"
+    "portalUrl": "https://arcgis.com"
   },
   "themeManifest": {
     "name": "default",
@@ -1212,7 +1293,14 @@
   "views": {},
   "sections": {},
   "dialogs": {},
-  "dataSources": {},
+  "dataSources": {
+    "dataSource_2": {
+      "type": "WEB_MAP",
+      "itemId": "e64f06e8d912465a96f9ea9bfdb72676",
+      "id": "dataSource_2",
+      "label": "Community Map"
+    }
+  },
   "messageConfigs": {},
   "pageStructure": [
     {
