@@ -2,8 +2,6 @@
 import { AllWidgetProps, BaseWidget, jsx } from "jimu-core";
 import { IMConfig } from "../config";
 
-// import { TabContent, TabPane, Nav, NavItem, NavLink, Button} from 'jimu-ui';
-import defaultMessages from "./translations/default";
 import { JimuMapViewComponent, JimuMapView } from "jimu-arcgis";
 import { Extent } from "esri/geometry";
 
@@ -23,20 +21,20 @@ export default class Widget extends BaseWidget<
     this.state = {
       jimuMapView: null,
       latitude: null,
-      longitude: null
+      longitude: null,
     };
   }
 
   activeViewChangeHandler = (jmv: JimuMapView) => {
     if (jmv) {
       this.setState({
-        jimuMapView: jmv
+        jimuMapView: jmv,
       });
 
       jmv.view.watch("extent", (evt: Extent) => {
         this.setState({
           latitude: evt.center.latitude,
-          longitude: evt.center.longitude
+          longitude: evt.center.longitude,
         });
       });
     }
