@@ -9,6 +9,7 @@ Presented: Esri Dev Summit 2020
 
 ## ArcGIS Experience Builder Resources
 
-* https://developers.arcgis.com/experience-builder/
-* https://community.esri.com/community/arcgis-experience-builder
-* https://github.com/Esri/arcgis-experience-builder-sdk-resources
+* [ArcGIS Experience Builder - Developers](https://developers.arcgis.com/experience-builder/)
+* [Experience Builder GeoNet Forums](https://community.esri.com/community/arcgis-experience-builder)
+* [Sample code](https://github.com/Esri/arcgis-experience-builder-sdk-resources)
+* [Tutorials](https://developers.arcgis.com/labs/?product=experience-builder&topic=any)
