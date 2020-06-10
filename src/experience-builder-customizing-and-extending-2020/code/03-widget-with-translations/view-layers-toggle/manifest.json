@@ -1,0 +1,19 @@
+{
+  "name": "view-layers-toggle",
+  "type": "widget",
+  "version": "1.0.0",
+  "exbVersion": "1.0.0",
+  "author": "Gavin Rehkemper",
+  "description": "Toggle through viewing layers!",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {},
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 800,
+    "height": 500
+  }
+}
