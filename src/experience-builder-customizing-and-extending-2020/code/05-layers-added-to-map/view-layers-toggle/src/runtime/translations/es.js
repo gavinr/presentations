@@ -1,0 +1,3 @@
+define({
+  viewLayer: "Ver capa",
+});

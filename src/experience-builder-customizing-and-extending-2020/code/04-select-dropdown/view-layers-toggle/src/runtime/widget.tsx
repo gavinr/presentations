@@ -20,10 +20,27 @@ export default class Widget extends BaseWidget<AllWidgetProps<IMConfig>, any> {
       : id;
   };
 
+  selectChangeHandler = (evt) => {
+    console.log("changed!", evt.target.value);
+  };
+
   render() {
     return (
       <div className="widget-demo jimu-widget m-2">
-        <p>{this.nls("viewLayer")}:</p>
+        <p>
+          {this.nls("viewLayer")}:
+          <select
+            style={{ maxWidth: "100%" }}
+            onChange={(evt) => {
+              this.selectChangeHandler(evt);
+            }}
+          >
+            <option value=""></option>
+            {this.props.config.layerUrls.map((url) => {
+              return <option value={url}>{url}</option>;
+            })}
+          </select>
+        </p>
       </div>
     );
   }
