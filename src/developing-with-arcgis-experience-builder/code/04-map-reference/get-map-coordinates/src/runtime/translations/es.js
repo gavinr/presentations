@@ -1,0 +1,3 @@
+define({
+  latitudeLongitude: "Latitud / Longitud"
+});
