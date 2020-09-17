@@ -1,6 +1,6 @@
 # Developing with ArcGIS Experience Builder
 
-Presented: Esri GeoDev Webinar, 2020-09
+Presented: Esri GeoDev Webinar, 2020-09-23
 
 ## Demo Widget
 

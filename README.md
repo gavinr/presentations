@@ -2,8 +2,7 @@
 
 | Talk                                                                                                                                                             | Event                     | Date    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------- |
-| Developing with ArcGIS Experience Builder                                                                                                                        | Esri GeoDev Webinar, 2020 | 2020-09 |
-| Tools for the Modern Web Developer                                                                                                                               | Esri Dev Summit 2020      | 2020-03 |
+| [Developing with ArcGIS Experience Builder](https://github.com/gavinr/presentations/tree/master/src/developing-with-arcgis-experience-builder)                   | Esri GeoDev Webinar, 2020 | 2020-09 |
 | [PS Developer Spotlight: Typescript](https://www.youtube.com/watch?v=EmJ4x4KeX58)                                                                                                                               | Esri Dev Summit 2020      | 2020-03 |
 | [PS Developer Spotlight: Svelte](https://www.youtube.com/watch?v=Y_EVrWtBnow)                                                                                                                                    | Esri Dev Summit 2020      | 2020-03 |
 | [ArcGIS API for JavaScript: Using Frameworks (Svelte)](https://github.com/gavinr/presentations/tree/master/src/js-frameworks-2020)                                                             | Esri Dev Summit 2020      | 2020-03 |
