@@ -2,6 +2,8 @@
 
 Presented: Esri GeoDev Webinar, 2020-09-23
 
+Recording: [youtube.com/watch?v=Vu6_pBa7zis](https://www.youtube.com/watch?v=Vu6_pBa7zis)
+
 ## Demo Widget
 
 * Final widget code from the talk can be seen [here](https://github.com/gavinr/presentations/tree/master/src/developing-with-arcgis-experience-builder/code/06-styles)
