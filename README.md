@@ -2,6 +2,9 @@
 
 | Talk                                                                                                                                                             | Event                     | Date    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------- |
+| [ArcGIS Experience Builder: Customizing and Extending](https://github.com/gavinr/experience-builder-customizing-and-extending-dev-summit-2021)                   | Esri Dev Summit 2021 | 2021-04 |
+| [Building Web Apps with Open Source Mapping APIs](https://github.com/jwasilgeo/ds2021-building-web-apps-with-open-source-mapping-apis)                   | Esri Dev Summit 2021 | 2021-04 |
+| [Working with Location Services with ArcGIS REST JS](https://github.com/jwasilgeo/ds2021-working-with-location-services-with-arcgis-rest-js)                   | Esri Dev Summit 2021 | 2021-04 |
 | [Developing with ArcGIS Experience Builder](https://github.com/gavinr/presentations/tree/master/src/developing-with-arcgis-experience-builder)                   | Esri GeoDev Webinar, 2020 | 2020-09 |
 | [PS Developer Spotlight: Typescript](https://www.youtube.com/watch?v=EmJ4x4KeX58)                                                                                                                               | Esri Dev Summit 2020      | 2020-03 |
 | [PS Developer Spotlight: Svelte](https://www.youtube.com/watch?v=Y_EVrWtBnow)                                                                                                                                    | Esri Dev Summit 2020      | 2020-03 |
