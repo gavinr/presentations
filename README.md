@@ -2,6 +2,7 @@
 
 | Talk                                                                                                                                                             | Event                     | Date    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------- |
+| [ArcGIS Experience Builder: Customizing and Extending](https://github.com/EsriDevEvents/experience-builder-customizing-and-extending-dev-summit-2023)                   | Esri Dev Summit 2023 | 2023-03 |
 | [ArcGIS Experience Builder: Customizing and Extending](https://github.com/gavinr/experience-builder-customizing-and-extending-dev-summit-2021)                   | Esri Dev Summit 2021 | 2021-04 |
 | [Building Web Apps with Open Source Mapping APIs](https://github.com/jwasilgeo/ds2021-building-web-apps-with-open-source-mapping-apis)                   | Esri Dev Summit 2021 | 2021-04 |
 | [Working with Location Services with ArcGIS REST JS](https://github.com/jwasilgeo/ds2021-working-with-location-services-with-arcgis-rest-js)                   | Esri Dev Summit 2021 | 2021-04 |
